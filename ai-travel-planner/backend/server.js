@@ -39,7 +39,10 @@ if (!process.env.GEMINI_API_KEY) {
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
+app.use(cors({
+  origin: "https://ai-travel-planner-h896.vercel.app/", // your deployed frontend URL
+  credentials: true
+}));
 app.use(express.json());
 
 app.get('/api/health', (req, res) =>
