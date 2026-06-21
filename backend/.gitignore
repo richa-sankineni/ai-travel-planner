@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# environment variables — never commit real secrets
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
