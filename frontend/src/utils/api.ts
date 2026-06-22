@@ -8,7 +8,7 @@
 import axios from 'axios';
 import type { Trip, Activity } from '../types';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ai-travel-planner-s1sr.onrender.com';
+const BASE_URL =  'https://ai-travel-planner-s1sr.onrender.com' || process.env.NEXT_PUBLIC_API_URL;
 
 const api = axios.create({ baseURL: `${BASE_URL}/api` });
 
